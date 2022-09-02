@@ -19,18 +19,32 @@ generate.addEventListener("click", function () {
 });
 // copy button
 copyClipBoard.addEventListener("click", function () {
-  if (Input.value || Input.value != startsWith("")) {
+  if (Input.value.trim() || Input.value.length) {
     Input.select();
     Input.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(Input.value);
-    alert("Password Copied 😉 !");
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+    Toast.fire({
+      icon: "success",
+      title: "Password Copied 😉 !",
+    });
   }
 });
 // clear button
 clearInput.addEventListener("click", function () {
   Input.value = "";
 });
-// ------------
+// particle js
 particlesJS("particles-js", {
   particles: {
     number: { value: 70, density: { enable: true, value_area: 800 } },
