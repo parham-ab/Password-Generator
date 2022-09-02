@@ -23,7 +23,7 @@ body {
   background-color: rgb(48 48 48 / 66%);
   backdrop-filter: blur(3px);
   width: 300px;
-  height: 250px;
+  height: 220px;
   align-items: center;
   text-align: center;
   flex-direction: column;
@@ -38,7 +38,7 @@ input {
   width: 250px;
   height: 40px;
   background-color: #efefef;
-  font-size: 20px;
+  font-size: 17px;
   padding: 10px;
 }
 /* icons */
