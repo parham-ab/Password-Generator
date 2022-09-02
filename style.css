@@ -44,6 +44,8 @@ input {
 /* icons */
 i {
   font-size: 18px;
+  display: flex !important;
+  justify-content: center;
 }
 /* buttons */
 button {
@@ -51,12 +53,15 @@ button {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 .btn-holder {
   margin-top: 40px;
 }
 .generate {
-  width: 200px;
+  width: 130px;
   font-size: 20px;
   margin-bottom: 10px;
   background-color: rgb(67, 187, 67);
@@ -98,7 +103,4 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-} /* ---- stats.js ---- */
-.count-particles {
-  border-radius: 0 0 3px 3px;
 }
