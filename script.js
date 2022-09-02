@@ -33,10 +33,10 @@ clearInput.addEventListener("click", function () {
 // ------------
 particlesJS("particles-js", {
   particles: {
-    number: { value: 80, density: { enable: true, value_area: 800 } },
+    number: { value: 70, density: { enable: true, value_area: 800 } },
     color: { value: "#ffffff" },
     shape: {
-      type: "circle",
+      type: "",
       stroke: { width: 0, color: "#000000" },
       polygon: { nb_sides: 5 },
       image: { src: "img/github.svg", width: 100, height: 100 },
@@ -60,7 +60,7 @@ particlesJS("particles-js", {
     },
     move: {
       enable: true,
-      speed: 6,
+      speed: 3,
       direction: "none",
       random: false,
       straight: false,
@@ -72,7 +72,7 @@ particlesJS("particles-js", {
   interactivity: {
     detect_on: "canvas",
     events: {
-      onhover: { enable: true, mode: "repulse" },
+      onhover: { enable: false, mode: "repulse" },
       onclick: { enable: true, mode: "push" },
       resize: true,
     },
